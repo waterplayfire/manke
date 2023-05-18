@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026) https://waterplayfire.github.io/app-support/ -->
+<html class="js csstransitions wf-prometo-n3-active wf-prometo-n2-active wf-active" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="漫客 player">
+		<meta name="author" content="漫客">
+		<meta property="og:site_name" content="manke.tv">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="漫客">
+		<meta property="og:description" content="Manke_files Web site">
+
+
+
+
+		<!-- <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon"> -->
+		<!-- <link rel="icon" href="./img/favicon.ico" type="image/x-icon"> -->
+
+
+
+		<title>漫客</title>
+
+		<!-- CSS -->
+		<link href="../Manke_files/css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="../Manke_files/css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="../Manke_files/css/simple-line-icons.css" rel="stylesheet" media="screen">
+		<link href="../Manke_files/css/animate.css" rel="stylesheet">
+
+		<!-- Custom styles CSS -->
+		<link href="../Manke_files/css/style.css" rel="stylesheet" media="screen">
+
+
+		<!-- Javascript files -->
+
+		<script src="../Manke_files/js/jquery.js"></script>
+		<script src="../Manke_files/js/jquery-ui.js"></script>
+		<script src="../Manke_files/js/jquery-parallax.js"></script>
+		<script src="../Manke_files/js/jquery.sticky.js"></script>
+		<script src="../Manke_files/js/jquery.cbpQTRotator.js"></script>
+
+		<script src="../Manke_files/js/bootstrap.js"></script>
+
+		<!--script src="http://cdn.bootcss.com/jquery.imagesloaded/4.1.1/imagesloaded.js"></script-->
+		<script src="../Manke_files/js/SmoothScroll.js"></script>
+		<script src="../Manke_files/js/wow.js"></script>
+		<script src="../Manke_files/js/jquery.waypoints.js"></script>
+
+		<script src="../Manke_files/js/custom.js"></script>
+
+
+	</head>
+
+	<body>
+
+
+		<section id="home" class="pfblock-image screen-height" style="height: 967px; background-position: 50% 0px;">
+			<div class="intro">
+				<div class="container">
+					<div class="start">
+						<img src="../Manke_files/image/logo_main.png" align="absmiddle" width="150" height="150"
+							alt="Manke_files">
+					</div>
+					<!-- <div style="font-size: 50pt; font-weight: bold;">漫 客</div> -->
+
+					<div class="des">
+
+					</div>
+
+					<div class="mainNavi">
+						<h4 class="text-center">
+							<a onclick="look()">前往漫客查看</a>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script>
+			function look() {
+				let search = window.location.search
+				let params = new URLSearchParams(search)
+				let query =params.toString() 
+				var link = 'https://9c6ccc7.umindex.com'
+				if (query != null && query.length > 0) {
+					link += '?' + query
+				}
+				// console.log(link)
+				window.location.replace(link)
+				// window.location.href = link;
+			}
+		</script>
+
+	</body>
+
+</html>
